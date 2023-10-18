@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Form</title>
+  
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url("form1_back.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        .container h2 {
+            margin: 0 0 20px 0;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .container img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin: 20px 0;
+        }
+
+        .input-group label {
+            display: block;
+            text-align: left;
+            margin: 10px 0;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1 style="font-weight: bold;">Yashwantrao Chavan College of Engineering</h1> 
+            <h2>Student Registration Form</h2>
+            <form method="post" id="form1">
+                <div class="input-group">
+                    <label for="name">Student Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="Roll">Roll NO:</label>
+                    <input type="number" id="Roll" name="Roll" required>
+                </div>
+                <div class="input-group">
+                    <label for="Enrolment">Enrolment No:</label>
+                    <input type="number" id="Enrolment" name "Enrolment" required>
+                </div>
+                <div class="input-group">
+                    <label for="Branch">Branch:</label>
+                    <select id="Branch" name="Branch" required>
+                        <option value="CSE">CSE</option>
+                        <option value="C.Tech">C.Tech</option>
+                        <option value="ETC">ETC</option>
+                        <option value="ENTC">ENTC</option>
+                        <option value="AIML">AIML</option>
+                        <option value="Mechanical">Mechanical</option>
+                    </select>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+
+
